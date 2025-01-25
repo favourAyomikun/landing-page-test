@@ -61,6 +61,7 @@ const Footer = ({ show = true }) => {
           </p>
           <p>
             <i className="fa fa-location-dot text-col60 py-2 sm:py-0"></i>{" "}
+            
             Somewhere in the world
           </p>
         </div>
