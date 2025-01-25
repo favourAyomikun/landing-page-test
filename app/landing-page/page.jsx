@@ -1,6 +1,6 @@
 import React from "react";
 import HeroImage from "../assets/Container.png";
-import Abstract from "../assets/Abstract.png";
+import Abstract from '../assets/Abstract.png'
 import Button from "../components/Button";
 import UseCaseSect from "../components/sections/UseCaseSect";
 import Features from "../components/sections/Features";
