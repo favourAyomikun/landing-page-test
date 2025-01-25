@@ -1,5 +1,5 @@
 import React from "react";
-import HeroImg from "../assets/Container.png";
+import HeroImage from "../assets/Container.png";
 import Abstract from "../assets/Abstract.png";
 import Button from "../components/Button";
 import UseCaseSect from "../components/sections/UseCaseSect";
@@ -8,6 +8,7 @@ import Faq from "../components/sections/Faq";
 import Testimonial from "../components/sections/Testimonial";
 import Footer from "../components/Footer";
 import IndividualBtn from "../components/IndividualBtn";
+import Image from "next/image";
 
 const LandingPage = () => {
   return (
@@ -34,12 +35,12 @@ const LandingPage = () => {
           <Button text="Open Account" />
         </div>
         <div className="md:w-1/2 relative w-full py-4 md:py-0 flex justify-center items-center">
-          <img
-            src={HeroImg}
+          <Image
+            src={HeroImage}
             className="md:w-3/4 w-full"
             alt="Hero section image"
           />
-          <img
+          <Image
             src={Abstract}
             alt="Abstract design"
             className="absolute top-5 -right-5 md:right-0 -z-10"

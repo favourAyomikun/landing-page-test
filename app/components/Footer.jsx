@@ -1,7 +1,8 @@
 import React from "react";
 import dotGlow from "../assets/dotglow.png";
 import Logo from "../assets/Logo.png";
-//
+import Image from "next/image";
+
 const Footer = ({ show = true }) => {
   return (
     <section
@@ -31,11 +32,11 @@ const Footer = ({ show = true }) => {
               Open Account
             </button>
           </div>
-          <img src={dotGlow} alt="gloww" className="absolute top-0 left-0" />
+          <Image src={dotGlow} alt="gloww" className="absolute top-0 left-0" />
         </div>
       </div>
       <div className="bg-grey11  left-0 w-full flex flex-col items-center px-4 sm:px-10 md:px-20 py-10 space-y-6">
-        <img src={Logo} alt="logo" className="w-24" />
+        <Image src={Logo} alt="logo" className="w-24" />
         <div className="flex space-x-3 text-white lg:text-lg sm:text-base text-sm ">
           <a href="" className="hover:text-col60">
             Home

@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Logo from "../assets/Logo.png";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -11,7 +12,7 @@ const Navbar = () => {
 
   return (
     <nav className="flex border relative border-grey15 justify-between items-center px-4 py-3 md:py-3 shadow-md rounded-l-full rounded-r-full bg-[#1c1c1c]">
-      <img src={Logo} alt="Logo" className="w-24" />
+      <Image src={Logo} alt="Logo" className="w-24" />
       <div className="hidden sm:flex space-x-3 text-white text-xs sm:text-sm lg:text-base justify-between items-center">
         <Link
           href="/"

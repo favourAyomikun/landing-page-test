@@ -9,6 +9,7 @@ import cashIcon from "../../assets/cash.png";
 import startupIcon from "../../assets/startup.png";
 import dotglow from "../../assets/dotglow.png";
 import dotglow2 from "../../assets/glowB.png";
+import Image from "next/image";
 
 const UseCaseSect = () => {
   return (
@@ -26,25 +27,25 @@ const UseCaseSect = () => {
             <div className="flex z-10 relative flex-col mx-auto w-full rounded-xl p-3 space-y-3">
               <div className="flex justify-between items-stretch space-x-3 w-full">
                 <div className="smallBlack py-3 basis-full lg:px-0 px-2">
-                  <img src={bulbIcon} alt="Managing personal" />
+                  <Image src={bulbIcon} alt="Managing personal" />
                   <h3 className="text-center">Managing Finances</h3>
                 </div>
                 <div className="smallBlack py-3 basis-full px-2 lg:px-0">
-                  <img src={handIcon} alt="saving" />
+                  <Image src={handIcon} alt="saving" />
                   <h3>Saving For the Future</h3>
                 </div>
               </div>
               <div className="flex justify-around  w-full space-x-3 items-stretch">
                 <div className="smallBlack  py-3 lg:px-0 basis-full px-2">
-                  <img src={homeIcon} alt="homeOwnership" />
+                  <Image src={homeIcon} alt="homeOwnership" />
                   <h3>Home Ownership</h3>
                 </div>
                 <div className="smallBlack py-3 lg:px-0 px-2 basis-full">
-                  <img src={bookIcon} alt="Educational funding" />
+                  <Image src={bookIcon} alt="Educational funding" />
                   <h3>Educational Funding</h3>
                 </div>
               </div>
-              <img
+              <Image
                 src={dotglow}
                 alt="gloww"
                 className="absolute -z-10 -top-9 -left-9 "
@@ -93,25 +94,25 @@ const UseCaseSect = () => {
             <div className="flex z-10 relative flex-col mx-auto w-full rounded-xl p-3 space-y-3">
               <div className="flex justify-between items-stretch space-x-3 w-full">
                 <div className="smallBlack py-3 basis-full lg:px-0 px-2">
-                  <img src={startupIcon} alt="Startups" />
+                  <Image src={startupIcon} alt="Startups" />
                   <h3 className="text-center">Startups and Entrepreneurs</h3>
                 </div>
                 <div className="smallBlack py-3 basis-full px-2 lg:px-0">
-                  <img src={cashIcon} alt="Cash Flow Management" />
+                  <Image src={cashIcon} alt="Cash Flow Management" />
                   <h3>Cash Flow Management</h3>
                 </div>
               </div>
               <div className="flex justify-around  w-full space-x-3 items-stretch">
                 <div className="smallBlack  py-3 lg:px-0 basis-full px-2">
-                  <img src={expansionIcon} alt="Business Expansion" />
+                  <Image src={expansionIcon} alt="Business Expansion" />
                   <h3>Business Expansion</h3>
                 </div>
                 <div className="smallBlack py-3 lg:px-0 px-2 basis-full">
-                  <img src={paymentIcon} alt="Payment Solutions" />
+                  <Image src={paymentIcon} alt="Payment Solutions" />
                   <h3>Payment Solutions</h3>
                 </div>
               </div>
-              <img
+              <Image
                 src={dotglow2}
                 alt="gloww2"
                 className="absolute -z-10 -right-8 -top-8"

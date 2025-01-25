@@ -7,7 +7,12 @@ import Carouseltext from "./CarouselText";
 import IndividualBtn from "../IndividualBtn";
 
 const Testimonial = () => {
-  const mobile = window.navigator.maxTouchPoints > 1;
+  const [isMobile, setIsMobile] = React.useState(false);
+
+  React.useEffect(() => {
+    setIsMobile(window.navigator.maxTouchPoints > 1);
+  }, []);
+
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -50,7 +55,7 @@ const Testimonial = () => {
           responsive={responsive}
           ssr={true}
           infinite={true}
-          autoPlay={mobile}
+          autoPlay={isMobile}
           autoPlaySpeed={1000}
           keyBoardControl={true}
           customTransition="all .5"
