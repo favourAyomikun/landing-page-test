@@ -1,8 +1,10 @@
+'use client'
+
 import React from "react";
-import IndividualBtn from "../IndividualBtn";
+import "react-multi-carousel/lib/styles.css"
 import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-import Carouseltext from "./Carouseltext";
+import Carouseltext from "./CarouselText";
+import IndividualBtn from "../IndividualBtn";
 
 const Testimonial = () => {
   const mobile = window.navigator.maxTouchPoints > 1;
@@ -53,10 +55,10 @@ const Testimonial = () => {
           keyBoardControl={true}
           customTransition="all .5"
           transitionDuration={500}
-          containerClass="carousel-container"
+          containerclassName="carousel-container"
           removeArrowOnDeviceType={["tablet", "mobile"]}
-          dotListClass="custom-dot-list-style"
-          itemClass="carousel-item-padding-40-px"
+          dotListclassName="custom-dot-list-style"
+          itemclassName="carousel-item-padding-40-px"
         >
           <Carouseltext
             text="I recently started my own business, and YourBank has been instrumental

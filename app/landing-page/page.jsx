@@ -1,15 +1,15 @@
 import React from "react";
 import HeroImg from "../assets/Container.png";
 import Abstract from "../assets/Abstract.png";
-import Button from "./Button";
-import UseCaseSect from "./Sects/UseCaseSect";
-import Features from "./Sects/Features";
-import Faq from "./Sects/Faq";
-import IndividualBtn from "./IndividualBtn";
-import Testimonial from "./Sects/Testimonial";
-import Footer from "./Footer";
+import Button from "../components/Button";
+import UseCaseSect from "../components/sections/UseCaseSect";
+import Features from "../components/sections/Features";
+import Faq from "../components/sections/Faq";
+import Testimonial from "../components/sections/Testimonial";
+import Footer from "../components/Footer";
+import IndividualBtn from "../components/IndividualBtn";
 
-const Home = () => {
+const LandingPage = () => {
   return (
     <section className="w-full">
       {/* Hero Section */}
@@ -108,4 +108,4 @@ const Home = () => {
     </section>
   );
 };
-export default Home;
+export default LandingPage;
