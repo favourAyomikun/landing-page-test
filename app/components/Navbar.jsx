@@ -5,6 +5,8 @@ import Logo from "../assets/Logo.png";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
+import { FaBars } from "react-icons/fa";
+import { FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -60,7 +62,7 @@ const Navbar = () => {
         className="block sm:hidden text-lg"
         onClick={() => setShowing(true)}
       >
-        <i className="fa-solid fa-bars-staggered text-col60"></i>
+        <FaBars className="text-col60"/>
       </button>
       <div
         className={`flex-col z-50 justify-center ${
@@ -72,7 +74,7 @@ const Navbar = () => {
           className="bg-yelloww px-3 md:hidden py-1 w-fit fixed top-3 left-3"
           onClick={() => setShowing(false)}
         >
-          <i className="fa fa-times text-lg text-white"></i>
+          <FaTimes className='text-white'/>
         </button>
         <ul
           className="flex flex-col space-y-5 justify-center items-center text-col60 "
