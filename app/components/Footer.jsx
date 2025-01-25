@@ -56,7 +56,7 @@ const Footer = ({ show = true }) => {
             <i className="fa fa-envelope text-col60"></i> hello@skillbridge.com
           </p>
           <p>
-            <i className="fa fa-phone text-col60 py-2 sm:py-0"></i> +91 91813 23
+            <i className="fa fa-phone text-col60 py-2 sm:py-0"></i> +91 91813 2
             2309
           </p>
           <p>
